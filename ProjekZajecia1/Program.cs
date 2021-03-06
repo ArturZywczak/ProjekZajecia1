@@ -22,8 +22,8 @@ namespace ProjekZajecia1Server {
         /// <summary>
         /// Funkcja od wysyłania wyniku działania
         /// </summary>
-        /// <param name="s"></param>
-        /// <param name="test"></param>
+        /// <param name="s">Socket używany do komunikacji</param>
+        /// <param name="test">tablica bajtów z wartościami do zsumowania</param>
         static void sendNumbers(Socket s, byte[] test) { //funkcja od wysyłania wyniku działania
             byte[] temp = new byte[2];
             temp[0] = 2;
@@ -33,7 +33,9 @@ namespace ProjekZajecia1Server {
         /// <summary>
         /// Funkcja od wysyłania obrazu
         /// </summary>
-        /// <param name="s"></param>
+        /// <param name="s">Test test siabadaba test</param>
+        /// <returns> nic nie zwraca, void przeciez lol. Test test</returns>
+        /// <value> a co to robi test test</value>
         static void sendPicutre(Socket s) { 
             Bitmap test = new Bitmap("C:\\Users\\Artur\\source\\repos\\ProjekZajecia1\\ProjekZajecia1\\pic.jpg");
             byte[] dataToSend;
